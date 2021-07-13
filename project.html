@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>
+       My Family Book
+    </title>
+    <style>
+        h1{text-align:center;
+} 
+body{ 
+  text-align:center;
+}
+
+#album
+{
+height:300px;
+width:300px;
+}
+button{
+  font-size:15px;
+}
+</style>
+ 
+    </head>
+      <body>
+
+         <h1>My Family Book</h1>
+        
+          <img id="album" src="https://image.shutterstock.com/image-vector/love-my-family-260nw-448420321.jpg">
+          <div><p id="des"></p></div>
+             <div> 
+          <button type="button" onclick="nextslide()">Next Picture
+        </button>
+    </div> 
+        <script>
+            var images = [
+            "https://i.pinimg.com/originals/1c/af/b4/1cafb40f8a056b0c0bb3ca61e38a98df.jpg",  
+            "https://www.thestatesman.com/wp-content/uploads/2020/05/QT-Family-Values.jpg",
+            "https://merriam-webster.com/assets/mw/images/article/art-wap-landing-mp-lg/family-of-four-7101-a234e9249b2c7223d4e4d8cd9432f9e9@1x.jpg",
+            "https://images.unsplash.com/photo-1588979355313-6711a095465f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFtaWx5JTIwcG9ydHJhaXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
+            "https://images.pexels.com/photos/4205505/pexels-photo-4205505.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            "https://www.shootproof.com/blog/wp-content/uploads/2020/02/nyejah-bolds-photography-family-portrait-posing-3.jpg",
+            "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2020/03/pjimage-2-1585013198.jpg",
+            "https://cpr.heart.org/-/media/cpr-images/courses-and-kits/family-and-friends/family-and-friends.jpg?h=400&la=en&mw=600&w=600&hash=23C296B85ADD4D8A0F7A169A7DD3619EE6158505",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy0hk_XQ7xlSlWcALlO8l1csaVSuoCGy4fTg&usqp=CAU"];
+
+            var i = 0;
+            var names=["Photo at beach",
+            "Whole family","photo 3","photo 4","photo 5","photo 6","photo 7","photo 8","photo 9"];
+function nextslide ()
+{
+  document.getElementById("album").src= images[i];
+  document.getElementById("des").innerHTML=names[i];
+i++;
+ if (i == 9)
+{
+ i=0;
+}
+};
+
+        </script>
+
+        </body>
+      </html>
+        
